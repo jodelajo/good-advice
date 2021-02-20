@@ -1,0 +1,23 @@
+{
+  "name": "good-advice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jodelajo/good-advice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jodelajo/good-advice/issues"
+  },
+  "homepage": "https://github.com/jodelajo/good-advice#readme",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
