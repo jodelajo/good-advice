@@ -17,7 +17,7 @@ function totalAdvices (slipArray){
     let myAdvice = [];
     for (let i = 0; i < slipArray.length; i++) {
         myAdvice = slipArray[i];
-        console.log('Here is some good advice:', myAdvice);
+        console.log('Here is some good advice:', myAdvice[i]);
         const adviceList = document.getElementById('lijst');
         const listItem = document.createElement('li');
         listItem.setAttribute('class', 'tegel');
