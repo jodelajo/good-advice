@@ -18,7 +18,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
-    font-size: 36px;
+    font-size: 6.6em;
     color: #C0DBED;
     text-align: center;
 }
@@ -38,7 +38,7 @@ body {
     min-height: 50px;
     letter-spacing: 2px;
     font-family: 'roboto';
-    border: 5px solid #000E17;
+    border: 5px solid #0161A2;
 }
 
 #button{
@@ -50,19 +50,20 @@ body {
 #lijst {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    grid-gap: 1rem;
+    /*grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));*/
+    /*grid-gap: 1rem;*/
 }
 
 .tegel {
     background-color: #DFEDF6;
     font-family: serif;
     color: #000E17;
-    font-size: 3.6em;
+    font-size: 2.6em;
     padding: 50px;
     margin: 40px 0px 10px 0px;
     border-radius: 32px;
     text-align: center;
     line-height: 1.6;
-    border: 5px solid #000E17;
+    /*border: 5px solid #000E17;*/
+    box-shadow: 5px 5px 35px #A0C9E5;
 }

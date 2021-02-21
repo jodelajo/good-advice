@@ -4,16 +4,13 @@ async function gimmySomeAdvice (){
     const url = (`https://api.adviceslip.com/advice/search/${searchSubject}`);
     const response = await axios.get(url);
     const slips = response.data.slips;
-
     console.log(slips[0].advice)
     console.log(response);
     console.log(response.data)
     // console.log(response.data.message)
     // console.log(response.data.message.text)
     searchAdvice.value= "";
-
     removeChilderen(adviceContainer);
-
     try {
         console.log('HI', response)
         // const errorMessage = response.data.message.text;
@@ -57,6 +54,5 @@ const pushbutton = document.getElementById("button");
 pushbutton.addEventListener('click', gimmySomeAdvice);
 const searchAdvice = document.getElementById("input");
 searchAdvice.addEventListener('keypress', adviceInput);
-const adviceContainer = document.getElementById('lijst')
-const adviceItem = document.getElementsByClassName('tegel');
+const adviceContainer = document.getElementById('lijst');
 
