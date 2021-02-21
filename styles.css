@@ -13,6 +13,7 @@ body {
     align-items: stretch;
     flex-wrap: nowrap;
 }
+
 #h1 {
     margin-left: auto;
     margin-right: auto;
@@ -23,38 +24,34 @@ body {
 }
 
 #form {
-   display: grid;
-    grid-template-columns: 1fr;
-    /*grid-column-gap: 40px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
     margin-bottom: 30px;
     align-items: center;
-
-
 }
 #button, #input {
     padding: 0px 20px;
     font-size: 16px;
+    font-weight: bold;
     min-height: 50px;
+    letter-spacing: 2px;
     font-family: 'roboto';
     border: 5px solid #000E17;
-
-
 }
-#input{
-    grid-column: 1 / span 1;
-    margin-bottom: 20px;
-}
+
 #button{
-    margin-left: 20px;
-    background-color: #01375C;
+    background-color: #0161A2;
     color: #A0C9E5;
     padding: 14px;
 }
 
 #lijst {
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-gap: 1rem;
 }
 
 .tegel {
@@ -68,25 +65,4 @@ body {
     text-align: center;
     line-height: 1.6;
     border: 5px solid #000E17;
-}
-
-@media screen and (min-width: 576px) {
-    #form {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-
-    }
-}
-#input{
-    grid-column: 1 / span 2;
-    margin-bottom: 0px;
-}
-
-#h1 {
-    font-size: 72px;
-}
-#button {
-    margin-left: 0;
 }
